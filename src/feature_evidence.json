@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-contact-us-section-to-the-homepage-displaying-contact-information-such-as-email-address-and-social-media-links",
+      "featureTitle": "Add a Contact Us section to the homepage displaying contact information such as email address and social media links",
+      "files": [
+        "frontend/src/components/ContactSection.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-popup-modal-that-appears-automatically-when-a-user-first-opens-the-website-to-collect-contact-details",
+      "featureTitle": "Implement a popup modal that appears automatically when a user first opens the website to collect contact details",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/components/WelcomeModal.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

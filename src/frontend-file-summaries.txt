@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for home, predictions listing, and prediction detail pages, all wrapped in a Layout component.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component that provides consistent page structure with WelcomeModal, Header, main content area using Outlet, and Footer across all routes.",
+  "frontend/src/components/Header.tsx": "Responsive header component with IPL logo, navigation links, and mobile menu support using cricket-themed styling.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying copyright information and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/pages/HomePage.tsx": "Homepage featuring hero section, feature highlights, ContactSection component, and call-to-action sections promoting match predictions with IPL-themed design.",
+  "frontend/src/pages/PredictionsPage.tsx": "Predictions listing page that fetches and displays all match predictions in a responsive card grid with loading and error states.",
+  "frontend/src/pages/PredictionDetailPage.tsx": "Detailed prediction view page showing comprehensive match information, confidence levels, analysis, and key factors with navigation back to predictions list.",
+  "frontend/src/components/PredictionCard.tsx": "Reusable prediction card component displaying match details, predicted winner, confidence level with color-coded badges, and click navigation to detail page.",
+  "frontend/src/hooks/usePredictions.ts": "React Query hook that fetches all predictions from the backend using getAllPredictions() method with proper loading states.",
+  "frontend/src/hooks/usePrediction.ts": "React Query hook that fetches a single prediction by ID from the backend using getPrediction() method with error handling.",
+  "frontend/src/index.css": "Global styles with IPL-themed OKLCH color system featuring cricket blue, energetic orange, and victory green colors for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with IPL-specific color tokens, custom font weights, and sporty design system matching the cricket theme.",
+  "frontend/src/components/WelcomeModal.tsx": "Welcome modal component that appears on first site visit, collecting user contact details (name, email, phone) with localStorage tracking to prevent repeated displays.",
+  "frontend/src/components/ContactSection.tsx": "Contact section component displaying contact information (email, phone, address), social media links, and business hours with IPL-themed styling."
+}

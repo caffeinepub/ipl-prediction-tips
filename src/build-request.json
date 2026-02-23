@@ -1,0 +1,63 @@
+{
+  "kind": "build_request",
+  "title": "Add contact section and welcome popup modal",
+  "projectName": "IPL Match Predictor",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Add a Contact Us section to the homepage displaying contact information such as email address and social media links",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Add a section for contact us"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact section is visible on the homepage",
+        "Section includes at least an email address field",
+        "Contact information is clearly formatted and readable",
+        "Section follows the existing IPL-themed design with cricket blue and energetic orange colors"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement a popup modal that appears automatically when a user first opens the website to collect contact details",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "when someone open a site pop up show up toh the person for contact details"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Modal appears automatically on initial site load",
+        "Modal includes form fields for collecting contact details (name, email, phone number)",
+        "Modal has a clear close button or dismiss action",
+        "Modal prevents interaction with background content until dismissed",
+        "Modal follows the IPL-themed design aesthetic",
+        "Modal should only appear once per session or use localStorage to avoid repeated displays"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify backend/main.mo as contact collection does not require backend storage at this stage",
+    "Maintain the existing IPL-themed color scheme and design language",
+    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Backend storage or processing of contact form submissions",
+    "Email sending or notification functionality",
+    "Contact form validation beyond basic HTML5 validation",
+    "Integration with third-party CRM or email services"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

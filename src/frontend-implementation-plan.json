@@ -1,0 +1,53 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add contact section and welcome popup modal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Add a Contact Us section to the homepage displaying contact information",
+      "acceptanceCriteria": [
+        "Contact section is visible on the homepage",
+        "Section includes at least an email address field",
+        "Contact information is clearly formatted and readable",
+        "Section follows the existing IPL-themed design with cricket blue and energetic orange colors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "create",
+          "description": "Create a new ContactSection component that displays contact information including email address and social media links. Use IPL-themed colors (cricket blue and energetic orange) consistent with the existing design. Include appropriate icons and styling using Tailwind CSS classes that match the color variables defined in frontend/src/index.css."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Import and add the ContactSection component to the HomePage after the existing features section. Position it as the final section before the footer to provide easy access to contact information for users browsing the homepage."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement a popup modal that appears automatically when a user first opens the website to collect contact details",
+      "acceptanceCriteria": [
+        "Modal appears automatically on initial site load",
+        "Modal includes form fields for collecting contact details (name, email, phone number)",
+        "Modal has a clear close button or dismiss action",
+        "Modal prevents interaction with background content until dismissed",
+        "Modal follows the IPL-themed design aesthetic",
+        "Modal should only appear once per session or use localStorage to avoid repeated displays"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WelcomeModal.tsx",
+          "operation": "create",
+          "description": "Create a WelcomeModal component that displays automatically on first visit. Include form fields for name, email, and phone number with basic HTML5 validation. Use localStorage to track whether the modal has been shown (key: 'welcomeModalShown') to prevent repeated displays across sessions. Include a close button and backdrop click handler to dismiss the modal. Use IPL-themed colors and styling consistent with the existing design. The modal should overlay with proper z-index and prevent background interaction while open."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Import and integrate the WelcomeModal component into the Layout component so it appears across all pages on initial load. Add state management to control modal visibility based on localStorage check. Render the WelcomeModal component above the main content area to ensure it displays on top of all page content."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "A website for IPL prediction tips",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-that-displays-ipl-indian-premier-league-match-prediction-tips-with-a-clear-header-and-navigation",
+      "title": "Create a homepage that displays IPL (Indian Premier League) match prediction tips with a clear header and navigation",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-predictions-listing-page-that-displays-all-available-match-prediction-tips-in-a-card-based-layout",
+      "title": "Create a predictions listing page that displays all available match prediction tips in a card-based layout",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-detailed-prediction-view-page-that-shows-comprehensive-information-about-a-specific-match-prediction-including-analysis-and-reasoning",
+      "title": "Add a detailed prediction view page that shows comprehensive information about a specific match prediction including analysis and reasoning",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-creative-and-sporty-visual-theme-that-reflects-cricket-and-ipl-excitement-with-bold-colors-dynamic-typography-and-cricket-inspired-design-elements-to-create-an-engaging-user-experience-throughout-the-application",
+      "title": "Design a creative and sporty visual theme that reflects cricket and IPL excitement with bold colors, dynamic typography, and cricket-inspired design elements to create an engaging user experience throughout the application",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-us-section-to-the-homepage-displaying-contact-information-such-as-email-address-and-social-media-links",
+      "title": "Add a Contact Us section to the homepage displaying contact information such as email address and social media links",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-popup-modal-that-appears-automatically-when-a-user-first-opens-the-website-to-collect-contact-details",
+      "title": "Implement a popup modal that appears automatically when a user first opens the website to collect contact details",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create website for IPL prediction tips",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement a backend data structure to store IPL match predictions including team names, match date, predicted winner, and confidence level",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend methods to add new prediction tips including update and query functions",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add a contact us section to the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement a pop-up modal that appears when someone opens the site to collect contact details",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "IPL Prediction Tips",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
